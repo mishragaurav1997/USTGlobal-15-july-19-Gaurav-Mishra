@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="./form.css">
+    <style>
+    body{
+        margin-left:25%;
+        margin-right:50%;
+    }
+    </style>
+</head>
+<body>
+    <legend>
+        <fieldset>
+           <form onsubmit="validateForm()" action="welcome.html" method="get" target="">
+               <div>
+                   <label for="">Username</label>
+               </div>
+               <div>
+                   <input onkeyup="validateForm()" name="Username" type="text" Required >
+               </div>
+               <div>
+                   <label for="">Password</label>
+               </div>
+               <div>
+                   <input onkeyup="validateForm()" name="Password" type="password" Required>
+               </div><br><br>
+               <div>
+                   <input name="loginSubmit" type="submit" value="Login" disabled>
+               </div>
+           </form>
+
+        </fieldset>
+
+
+
+
+
+
+
+
+    </legend>
+    <script src="./form.js"></script>
+</body>
+</html>

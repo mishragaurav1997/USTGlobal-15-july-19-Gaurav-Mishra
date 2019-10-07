@@ -1,0 +1,76 @@
+
+<html>
+<head>
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="./assignment5.css">
+</head>
+<body>
+    <legend>
+        <fieldset>  
+           <form onsubmit="validForm()" action="welcome.html" method="get" target="">
+           
+               <div>
+                   <label for="">FirstName</label>
+               </div>
+               <div>
+                   <input onkeyup="validForm()" name="fname" type="text" Required >
+                   <p id="null" style="display: none" style="font-size: 12"> *Invalid Name</p>
+               </div>
+               <div>
+                   <label for="">LastName</label>
+               </div>
+               <div>
+                   <input onkeyup="validForm()" name="lname" type="password" Required>
+                   <p id="null1" style="display: none" style="font-size:12 "> *Invalid Name</p>
+               </div>
+               <div>
+                   <label for="">Company Name</label>
+               </div>
+               <div>
+                   <input onkeyup="validForm3()" id="ino" name="compName" type="text" required>
+               </div>
+               <div>
+                <label for="">Emp ID</label>
+            </div>
+            <div>
+                <input onkeyup="validForm1()" name="emp" type="text" required>
+            </div>
+            <div>
+                <label for="">Date of Joining</label>
+            </div> 
+            <div>
+                <input onkeyup="validForm2()" id="dojo" name="joinDate" type="date" required>
+            </div>
+            <div>
+                <label for="">Gender</label>
+            </div>
+            <div>
+                <input id="side" onkeyup="validForm()" name="Gender" type="radio" required>Male
+                <input id="side" onkeyup="validForm()" name="Gender" type="radio" required>Female
+                <input id="side" onkeyup="validForm()" name="Gender" type="radio" required>others
+            </div>
+            <div>
+                <label for="">Skills</label>
+            </div>
+            <div>
+                <input id="side" onkeyup="validForm()" name="skills" type="checkbox" required>Java <br>
+                <input id="side" onkeyup="validForm()" name="skills" type="checkbox" >SQL <br>
+                <input id="side" onkeyup="validForm()" name="skills" type="checkbox" >J2EE <br>
+                <input id="side" onkeyup="validForm()" name="skills" type="checkbox" >Hibernate <br>
+                        </div>
+
+               <br><br>
+               <div>
+                   <input id="loginSubmit" type="submit" value="Submit" >
+               </div>
+               <div>
+                   <input id="reset" type="reset" value="Reset">
+               </div>
+           </form>
+
+        </fieldset>
+
+    </legend>
+    <script src="./assignment5.js"></script>
+</body>
+</html>
