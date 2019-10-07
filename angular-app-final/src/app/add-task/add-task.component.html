@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="col-md-5 offset-md-4 mt-4 ml-3 ">
+        <h3 class="text-center">Add Task!!!</h3>
+        <form method="POST" role="form" #userForm='ngForm' (ngSubmit)='postData(userForm)' class="form-Group">
+
+            <input type="text" name="task" class="form-control mb-3 mt-3" #task='ngModel'
+                ngModel placeholder="Enter the Task " required minlength="3">
+
+                <button type="submit" class="btn btn-outline-success float-right" [disabled]='userForm.invalid'>
+                        ADD Task</button>
+        </form>
+    </div>
+</div>
