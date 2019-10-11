@@ -1,0 +1,58 @@
+<div class="container">
+<div class=" col-md-4 offset-md-4 mt-5 card card-body">
+    <h4 class="text-center">Please Login!</h4>
+    <fieldset>
+    <form action="" #loginForm ='ngForm' (ngSubmit)='printForm(loginForm)'>
+        <div class="form-group">
+<label for="username" >UserName</label>
+<input type="email" class="form-control" name="username" class="form-control" 
+#username='ngModel' placeholder="UserName" ngModel required minlength="5" email>
+<div *ngIf='username.touched && username.invalid'>
+    <div class="alert alert-danger"
+    *ngIf='username.errors.email'>only e-mail should be entered
+</div>
+<div class="alert alert-danger"
+*ngIf='username.errors.minlength'> Minimum length of this field is 5</div>
+</div>
+</div>
+<div class="form-group">
+<label for="password">PassWord</label>
+<input type="password" class="form-control"
+name="password" #password='ngModel' ngModel placeholder="PassWord" ngModel pattern="raja">
+<div *ngIf='password.invalid && password.touched'>
+    <div class="alert alert-danger" *ngIf='password.errors.pattern'>
+        pattern not matching'name'
+    </div>
+
+</div>
+
+</div>
+<div class="btn btn-group col-md-4">
+<button type="reset" class="btn btn-outline-primary" value="reset">Reset</button>
+<button type="submit" class="btn btn-outline-success" value="submit" name="submit"
+(click)='printForm(loginForm,username)'
+[disabled]='loginForm.inavalid'> Submit</button>
+</div>
+</form>
+</fieldset>
+</div>
+</div>
+<div class="container">
+    <table class="table table-hover table-bordered table-dark">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Username</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor(let user of users)>
+                <td>{{user.Index}}</td>
+                <td>{{user.UserName}}</td>
+                <td>{{user.password}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>

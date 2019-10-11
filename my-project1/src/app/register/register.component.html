@@ -1,0 +1,64 @@
+<div class="container">
+        <div class=" col-md-4 offset-md-4 mt-5 card card-body">
+                <h4 class="text-center">Registration Form!!!</h4>
+                <fieldset>
+                        <form action="" [formGroup]='registerForm' (ngSubmit)='printForm(registerForm)'>
+                                <div class="form-group">
+                                        <label for="text">Name</label>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                                formControlName='name' placeholder="Name">
+                                        <div *ngIf='name.touched && name.invalid'>
+                                                <div *ngIf='name.errors.maxlength'>
+                                                        maxlength is 10
+                                                </div>
+                                                <div class="alert alert-danger" *ngIf='name.errors.minlength'> minlength
+                                                        is 3</div>
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                        <label for="text">E-mail</label>
+                                        <input type="email" name="email" id="email" formControlName='email'
+                                                class="form-control" placeholder="e-mail" email>
+                                        <div *ngIf='email.touched && email.invalid'>
+                                                <div *ngIf='email.errors.minlength' class="alert alert-danger">
+                                                        only email
+                                                </div>
+                                                <div class="alert alert-danger" *ngIf='email.errors.noSpace'> Space is
+                                                        not Allowed</div>
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                        <label for="text">Ph no.</label>
+                                        <input type="tel" name="phno" class="form-control" formControlName='phno'
+                                                placeholder="Phone Number">
+                                        <div *ngIf='phno.touched && phno.invalid'>
+                                                <div class="alert alert-danger" *ngIf='phno.errors.minlength'> minlength
+                                                        is 10</div>
+                                        </div>
+                                </div>
+                                <!-- <div class="form-group">
+<label for="password">PassWord</label>
+<input type="password" class="form-control" placeholder="PassWord">
+</div>
+<div class="form-group">
+        <label for="password">Confirm-Password</label>
+        <input type="password" class="form-control" placeholder="Confirm-PassWord">
+        </div>
+        <div class="form-group">
+            <label for="text"> Gender:  </label>
+            <input type="radio" name="gender">Male 
+            <input type="radio" name="gender">Female 
+            <input type="radio" name="gender">Others
+        </div> -->
+
+                                <div class="btn btn-group col-md-12">
+
+                                        <button type="reset" class="btn btn-outline-primary mr-3"
+                                                value="reset">Reset</button>
+                                        <button type="submit" class="btn btn-outline-success mr-3" value="submit">
+                                                Submit</button>
+                                </div>
+                        </form>
+                </fieldset>
+        </div>
+</div>
