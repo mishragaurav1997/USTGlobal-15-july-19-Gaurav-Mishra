@@ -1,0 +1,37 @@
+th{
+    border-style: solid;
+    border-radius: 10px;
+background-color: aquamarine;
+}
+td{
+    border-style: solid;
+    border-radius: 10px;
+    background-color: blueviolet;
+}
+#pass{
+    color: darkgreen;
+    size: 100px;
+}
+
+fieldset{
+    background-color: aqua;
+   text-align: center;
+   width: 25%;
+   height: 65%;
+border-radius: 50px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-left: 550px;
+
+}
+.h1{
+    text-align: left;
+}
+.usr{
+    border-radius: 50px;
+}
+#ashu{
+    margin-right: 70px;
+}
+legend{
+    float: left;
+}

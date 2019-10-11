@@ -1,0 +1,17 @@
+#header h1{
+text-decoration: none;
+    color: #ffffff;
+    font-size: 40px;
+    background:#3b5998;
+    margin: 0;
+    border: 
+    align-content: center;
+}
+.account a{
+    background:green ;
+    transform: skew(30%);
+    transition: cubic-bezier(0,75,0,85,0,165,1);
+    padding: 10px;
+
+
+}

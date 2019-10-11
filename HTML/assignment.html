@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="./assignment.css">
+</head>
+<body>
+    <div>
+        <table id="tab" border="1">
+                <tr>
+                    <th rowspan="1" colspan="6">Time Table</th>
+                </tr>
+                <tr>
+                    <th rowspan="6"> Hours</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                </tr>
+                <tr>
+                
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Arts</td>
+                </tr>
+                <tr>
+                    <td>Social</td>
+                    <td>History</td>
+                    <td>English</td>
+                    <td>Social</td>
+                    <td>Sports</td>
+                </tr>
+                <tr>
+                    <th rowspan="1" colspan="5">Lunch</th>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td rowspan="2">Project</td>
+                </tr>
+                <tr>
+                    <td>Social</td>
+                    <td>History</td>
+                    <td>English</td>
+                    <td>Social</td>
+                </tr>
+            </table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <table border="1">
+                    <tr>
+                        <th colspan="2">Home Town</th>
+                        <th colspan="2">Away Team</th>
+                    </tr>
+                    <tr>
+                        <td>Arsenal</td>
+                        <td>2</td>
+                        <td>Leeds</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Derby</td>
+                        <td>1</td>
+                        <td>Everton</td>
+                        <td>1</td>
+                    </tr> 
+                    <tr>
+                        <td>Liverpool</td>
+                        <td>0</td>
+                        <td>Sunderland</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Newcastle</td>
+                        <td>1</td>
+                        <td>Man Utd</td>
+                        <td>4</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                    <legend>
+                            <fieldset id="fs"> 
+                                <br>
+                               <form onsubmit="validForm()" action="welcome.html" method="get" target="">
+                                   <div>
+                                       <label for="">FirstName</label>
+                                   </div>
+                                   <div>
+                                       <input onkeyup="validForm()" name="fname" type="text" Required >
+                                   </div>
+                                   <br>
+                                   <div>
+                                       <label for="">LastName</label>
+                                   </div>
+                                   <div>
+                                       <input onkeyup="validForm()" name="lname" type="text" Required>
+                                   </div>
+                                   <br>
+                                   <div>
+                                       <label for="">Company Name</label>
+                                   </div>
+                                   <div>
+                                       <input onkeyup="validForm3()" id="ino" name="compName" type="text" required>
+                                   </div>
+                                   <br>
+                                   <div>
+                                    <label for="">Emp ID</label>
+                                </div>
+                                <div>
+                                    <input onkeyup="validForm1()" name="emp" type="text" required>
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="">Date of Joining</label>
+                                </div> 
+                                <div>
+                                    <input onkeyup="validForm2()" id="dojo" name="joinDate" type="date" required>
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="">Gender</label>
+                                </div>
+                                <div>
+                                    <input id="side" onkeyup="validForm()" name="Gender" type="radio" required>Male
+                                    <input id="side" onkeyup="validForm()" name="Gender" type="radio" required>Female
+                                    <input id="side" onkeyup="validForm()" name="Gender" type="radio" required>Others
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="">Skills</label>
+                                </div>
+                                <div>
+                                    <input id="side" onkeyup="validForm()" name="skills" type="checkbox" required>Java <br>
+                                    <input id="side" onkeyup="validForm()" name="skills" type="checkbox" >SQL <br>
+                                    <input id="side" onkeyup="validForm()" name="skills" type="checkbox" >J2EE <br>
+                                    <input id="side" onkeyup="validForm()" name="skills" type="checkbox" >Hibernate <br>
+                                            </div>
+                    
+                                   <br><br>
+                                   <div>
+                                       <input id="loginSubmit" type="submit" value="Submit" >
+                                   </div>
+                                   <div>
+                                       <input id="reset" type="reset" value="Reset">
+                                   </div>
+                               </form>
+                    
+                            </fieldset>
+                    
+                        </legend>
+                    
+            </div>
+</body>
+</html>
