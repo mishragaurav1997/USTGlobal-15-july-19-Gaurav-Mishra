@@ -1,0 +1,11 @@
+<div class="col-md-4 offset-md-4 mt-4"> 
+    <h3 class="text-center"> Search Movies</h3>
+<input type="Search" [(ngModel)] ='searchName' (keyup)='searchMovies(searchName)' class="form-control" placeholder="Enter Movie Name..... " class="form-control">
+</div>
+<!-- <displaying movies -->
+    <div class="col-md-2 float-left ml-5 mr-5 mt-5  card card-body" *ngFor="let movie of movieArray">
+        <img src="{{movie.Poster}}" class="img-thumbnail"  class="" alt="">
+        <h4 class="text-center">{{movie.Title}}</h4>
+        <h5 class="text-center">{{movie.Year}}</h5>
+        <h3 class="text-center">{{ movie.imdbID}}</h3>
+    </div>

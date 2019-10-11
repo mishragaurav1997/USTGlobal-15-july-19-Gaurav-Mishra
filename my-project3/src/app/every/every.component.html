@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="card card-body col-md-3 ml-4 bg-danger float-left mt-2" *ngFor="let newa of everyNews">
+        <img src="{{newa.urlToImage}}" class="img-thumbnail" alt="">
+        <h3>{{newa.title}}</h3>
+        <p>{{ newa.description}}</p>
+        <a href="{{newa.url}}" class="btn btn-primary"> Click here for more</a>
+    </div>
+</div>

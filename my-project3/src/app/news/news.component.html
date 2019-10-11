@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="card card-body col-md-12" *ngFor="let news of indianNews">
+        <img src="{{news.urlToImage}}" class="img-thumbnail" alt="">
+        <h3>{{news.title}}</h3>
+        <p>{{ news.description}}</p>
+        <a href="{{news.url}}" class="btn btn-primary"> Click here for more</a>
+    </div>
+</div>

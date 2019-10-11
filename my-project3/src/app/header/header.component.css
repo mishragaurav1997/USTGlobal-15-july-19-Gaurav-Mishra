@@ -1,0 +1,10 @@
+#opt{
+    margin-left: 30px;
+    margin-top: 8px;
+    width: 328px;
+    border-bottom: 2px solid blue;
+    text-align: center;
+}
+#opt :hover {
+    box-shadow: 0px 800px 800px 0px blue;
+}

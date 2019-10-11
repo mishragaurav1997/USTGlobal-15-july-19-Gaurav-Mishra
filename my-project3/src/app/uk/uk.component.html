@@ -1,0 +1,8 @@
+<div class="container">
+        <div class="card card-body col-md-12" *ngFor="let sport of sportNews">
+            <img src="{{sport.urlToImage}}" class="img-thumbnail" alt="">
+            <h3>{{sport.title}}</h3>
+            <p>{{ sport.description}}</p>
+            <a href="{{sport.url}}" class="btn btn-primary"> Click here for more</a>
+        </div>
+    </div>
